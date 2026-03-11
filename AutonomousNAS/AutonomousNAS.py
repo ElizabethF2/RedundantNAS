@@ -4,12 +4,9 @@ import time, os, sys, stat, shutil, json, base64, tempfile, subprocess, libnas
 Commit_File = 'commits.json'
 Include_Paths = [
                   '/home/example/Documents',
-
-
                 ]
 
 Exclude_Paths = [
-
                 ]
 Max_Commit_Files = 90000
 Max_Commit_Size = 2*(1024**3)
@@ -22,7 +19,6 @@ NAS = libnas.NAS(
                  password = '3W1m3FwXYnwS',
                  cert_path = '../cert.pem'
                 )
-
 
 def sizeof_fmt(num, suffix='B'):
   for unit in ['','K','M','G','T','P','E','Z']:

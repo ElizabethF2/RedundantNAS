@@ -10,8 +10,6 @@ except: raw_input = input
 working_directory = ''
 clipboard = []
 
-
-
 NAS = libnas.NAS(server_url = sys.argv[1],
                  password = sys.argv[2],
                  cert_path = sys.argv[3])
